@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kikiw.css" />
+    <title>Abut Us</title>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">Syauqi</div>
+                <div class="middlename">Komputer</div>
+                <div class="lastname">Berkah</div>
+            </div>
+            <ul class="navigation">
+                <li>
+                    <img src="SYAUQI.png" alt="Logo" class="logo1">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                <li class="aboutus">
+                    <img src="SYAUQI.png" alt="logo" class="logo2">
+                    <a href="#" class="active">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- NAVIGATION BAR SELESAI -->
+
+    <!-- KONTEN 1 -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="lokasi.jpeg" alt="Description of the image">
+            </div>
+        </div>
+        <div class="description-container">
+            <h2>Lokasi dan Kontak Kami</h2>
+            <p>Lokasi Kantor: Syauqi Computer Berkah berlokasi di pusat kota Surabaya, memberikan akses mudah bagi pelanggan dari seluruh wilayah. Anda dapat mengunjungi kami di alamat berikut:
+
+                Alamat:
+                Jl. Pahlawan No. 123, Surabaya, Jawa Timur 60174, Indonesia.
+                
+                Cara Menghubungi Kami:
+                Kami selalu siap melayani kebutuhan Anda! Hubungi kami melalui saluran berikut:
+                
+                Telepon: 0878-8833-338 (a.n. Syauqi)
+                Email: syauqikahfisin@gmail.com
+                Kami juga menerima konsultasi dan permintaan informasi lebih lanjut melalui WhatsApp di nomor yang sama. Jangan ragu untuk menghubungi kami kapan saja!
+            </p>
+        </div>
+        </div>
+    </section>
+
+ 
+    <!-- KONTEN SELESAI -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Barokah Makmur Perkasa</h3>
+                <p>Menawarkan layanan jasa konstruksi berkualitas tinggi.</p>
+                <p>&copy; 2024 Barokah Makmur Perkasa. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" onclick="togglePhoneNumber(event)">Kontak</a></li>
+                </ul>
+                <div id="phone-number" style="display:none;">
+                    <p>Telepon: 087865573471</p>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-icons">
+                        <a href="mailto:your-email@gmail.com" target="_blank" class="icon-link">
+                            <img src="Gmail Email Logo G Suite Google PNG - Free Download.jpeg" alt="Gmail"
+                                class="footer-icon">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="icon-link">
+                            <img src="Facebook Scalable Graphics Icon, Facebook logo , Facebook logo transparent background PNG clipart.jpeg"
+                                alt="Facebook" class="footer-icon">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="icon-link">
+                            <img src="instagram.jpeg" alt="Instagram" class="footer-icon">
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="icon-link">
+                            <img src="Download Twitter logo png, Twitter icon transparent free png.jpeg" alt="Twitter"
+                                class="footer-icon">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER SELESAI -->
+            <script src="java.js"></script>
+            <script>
+                // JavaScript untuk mengubah style navbar saat scroll
+                window.onscroll = function () {
+                    const navbar = document.getElementById("navbar");
+                    if (window.scrollY > 50) {
+                        navbar.classList.add("scrolled");
+                    } else {
+                        navbar.classList.remove("scrolled");
+                    }
+                };
+            </script>
+            <!-- script untuk kontak -->
+            <script>
+                function togglePhoneNumber(event) {
+                    event.preventDefault(); // Mencegah tautan default
+                    const phoneNumberDiv = document.getElementById("phone-number");
+                    if (phoneNumberDiv.style.display === "none") {
+                        phoneNumberDiv.style.display = "block";
+                    } else {
+                        phoneNumberDiv.style.display = "none";
+                    }
+                }
+            </script>
+</body>
+
+</html>
